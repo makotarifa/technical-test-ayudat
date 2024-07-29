@@ -3,7 +3,7 @@ import NewsletterHome from "@/views/sections/HomeView/NewsletterHome.vue";
 </script>
 
 <template>
-    <main>
-        <newsletter-home />
-    </main>
+        <main>
+            <newsletter-home />
+        </main>
 </template>
