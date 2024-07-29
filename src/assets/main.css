@@ -1,16 +1,20 @@
 @import './base.css';
 
 #app {
-  margin: 0 auto;
-  font-weight: normal;
+    margin: 0 auto;
+    font-weight: normal;
 }
 
-.img-controller img, .img-controller-inverse img, .inside-image{
-  display: block;
-  width: 100%;
-  height: auto;
+.img-controller img, .img-controller-inverse img, .n-button img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
+h6 {
+    color: var(--title-primary-color);
+}
 
-
-
+h1, h2 {
+    color: var(--light-primary-text-color);
+}
