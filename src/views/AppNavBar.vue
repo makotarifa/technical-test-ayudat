@@ -24,7 +24,7 @@ import { NButton, NIcon } from "naive-ui";
             </ul>
             <div class="nav-right">
                     <RouterLink to="/login">Login</RouterLink>
-                    <n-button size="large" icon-placement="right" color="#8a2be2">
+                    <n-button size="large" icon-placement="right" color="#8D5CF6">
                         <template #icon>
                             <n-icon size="12">
                                 <div class="img-controller">

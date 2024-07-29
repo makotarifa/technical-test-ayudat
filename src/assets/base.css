@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-    --vt-c-white: #ffffff;
     --vt-c-white-soft: #fafafa;
     --vt-c-white-mute: #f2f2f2;
 
@@ -16,11 +17,14 @@
 
     --vt-c-text-light-1: var(--vt-c-indigo);
     --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-    --vt-c-text-dark-1: var(--vt-c-white);
+    --vt-c-text-dark-1: var(--white-text-color);
     --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
+    --white-text-color: #ffffff;
     --dark-background-color: #26335D;
     --primary-color: #8D5CF6;
+    --primary-color-hover: rgba(159, 118, 247, 1);
+    --primary-color-active: rgba(124, 81, 216, 1);
     --secondary-color: #FF7EB6;
     --danger-color: #FF4757;
     --elipse-color: #FC724D;
@@ -42,15 +46,18 @@
     --section-gap: 160px;
 
     --button-primary-color: var(--primary-color);
+    --button-hover-primary-color: var(--primary-color-hover);
+    --button-active-primary-color: var(--primary-color-active);
     --title-primary-color: var(--primary-color);
     --icon-primary-color: var(--primary-color);
     --background-shape-primary-color: var(--secondary-color);
     --background-shape-second-color: var(--elipse-color);
     --row-separator-primary-color: var(--danger-color);
-    --footer-primary-color: var(--vt-c-white);
+    --footer-primary-color: var(--white-text-color);
     --footer-secondary-color: var(--vt-c-white-soft);
-    --primary-text-color: var(--text-color);
-    --secondary-text-color: var(--second-text-color);
+    --light-primary-text-color: var(--white-text-color);
+    --dark-primary-text-color: var(--text-color);
+    --dark-secondary-text-color: var(--second-text-color);
 }
 
 *,
@@ -58,17 +65,8 @@
 *::after {
     box-sizing: border-box;
     margin: 0;
-    font-weight: normal;
-}
-
-body {
-    min-height: 100vh;
-    color: var(--color-text);
-    background: var(--color-background);
-    transition: color 0.5s,
-    background-color 0.5s;
-    line-height: 1.6;
-    font-family: Inter,
+    font-weight: 400;
+    font-family: 'Montserrat',Inter,
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
@@ -80,8 +78,17 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: color 0.5s,
+    background-color 0.5s;
+    line-height: 1.6;
 }
