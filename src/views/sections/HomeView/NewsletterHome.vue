@@ -26,14 +26,13 @@ const newsletterStore = useNewsletterStore();
 <style scoped>
 .newsletter {
     color: var(--light-primary-text-color);
-    min-height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 11.4rem 0;
-    gap: 5.7rem;
+    padding: 160px 0;
+    gap: 80px;
 }
 
 .newsletter h3 {

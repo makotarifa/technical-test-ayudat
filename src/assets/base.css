@@ -17,10 +17,10 @@
 
     --vt-c-text-light-1: var(--vt-c-indigo);
     --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-    --vt-c-text-dark-1: var(--white-text-color);
+    --vt-c-text-dark-1: var(--pure-white-color);
     --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
-    --white-text-color: #ffffff;
+    --pure-white-color: #ffffff;
     --dark-background-color: #26335D;
     --primary-color: #8D5CF6;
     --primary-color-hover: rgba(159, 118, 247, 1);
@@ -37,8 +37,6 @@
     --color-background-soft: var(--vt-c-white-soft);
     --color-background-mute: var(--vt-c-white-mute);
 
-    --color-border: var(--vt-c-divider-light-2);
-    --color-border-hover: var(--vt-c-divider-light-1);
 
     --color-heading: var(--vt-c-text-light-1);
     --color-text: var(--vt-c-text-light-1);
@@ -53,11 +51,13 @@
     --background-shape-primary-color: var(--secondary-color);
     --background-shape-second-color: var(--elipse-color);
     --row-separator-primary-color: var(--danger-color);
-    --footer-primary-color: var(--white-text-color);
+    --footer-primary-color: var(--pure-white-color);
     --footer-secondary-color: var(--vt-c-white-soft);
-    --light-primary-text-color: var(--white-text-color);
+    --light-primary-text-color: var(--pure-white-color);
     --dark-primary-text-color: var(--text-color);
     --dark-secondary-text-color: var(--second-text-color);
+    --card-background-primary-color: var(--pure-white-color);
+    --color-border: var(--pure-white-color);
 }
 
 *,
