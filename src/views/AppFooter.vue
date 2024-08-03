@@ -140,6 +140,7 @@ import { NButton, NIcon } from "naive-ui";
 
 .second-footer-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 2rem 0;
 }
@@ -150,6 +151,20 @@ import { NButton, NIcon } from "naive-ui";
 
 td .img-controller {
     margin: 0 0.8rem;
+}
+
+@media (max-width: 768px){
+    .second-footer-content p {
+        width: 100%;
+        text-align: center;
+        color: var(--dark-secondary-text-color);
+    }
+
+    .second-footer-content > div {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 

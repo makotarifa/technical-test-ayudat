@@ -5,6 +5,37 @@
     font-weight: normal;
 }
 
+:root {
+    --color-heading: var(--vt-c-text-light-1);
+    --color-text: var(--vt-c-text-light-1);
+
+    --section-gap: 160px;
+
+    --color-background-soft: var(--vt-c-white-soft);
+    --color-background-mute: var(--vt-c-white-mute);
+    --color-background: var(--dark-background-color);
+    --button-primary-color: var(--primary-color);
+    --button-hover-primary-color: var(--primary-color-hover);
+    --button-active-primary-color: var(--primary-color-active);
+    --link-primary-color: var(--primary-color);
+    --icon-primary-color: var(--primary-color);
+    --background-shape-primary-color: var(--secondary-color);
+    --background-shape-second-color: var(--elipse-color);
+    --row-separator-primary-color: var(--danger-color);
+    --footer-primary-color: var(--pure-white-color);
+    --footer-secondary-color: var(--vt-c-white-soft);
+    --title-primary-color: var(--primary-color);
+    --light-primary-text-color: var(--pure-white-color);
+    --orange-text-color: var(--orange-color);
+    --dark-primary-text-color: var(--text-color);
+    --dark-secondary-text-color: var(--second-text-color);
+    --text-muted-color: var(--muted-color);
+    --card-background-primary-color: var(--pure-white-color);
+    --color-border: var(--pure-white-color);
+    --card-tag-primary-color: var(--danger-color);
+    --card-tag-secondary-color: var(--dark-background-color);
+}
+
 .img-controller img, .img-controller-inverse img, .n-button img {
     display: block;
     width: 100%;

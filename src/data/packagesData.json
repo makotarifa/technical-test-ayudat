@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Training Courses",
+    "description": "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+    "rate": 4.9,
+    "sales": 15,
+    "oldPrice": 16.48,
+    "newPrice": 6.48,
+    "image": "/images/packages/product-cover-124.jpg"
+  },
+  {
+    "title": "Lifetime access",
+    "description": "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+    "rate": 4.9,
+    "sales": 15,
+    "oldPrice": 16.48,
+    "newPrice": 6.48,
+    "image": "/images/packages/product-cover-125.jpg"
+  }
+
+]

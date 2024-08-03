@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import FAQCard from "@/components/FAQCard.vue";
 import faqData from "@/data/faqData.json";
+import { ref } from "vue";
 
 interface FAQEntity {
     title: string;
@@ -9,7 +10,8 @@ interface FAQEntity {
 
 const faqWidth = "333px";
 const faqHeight = "151px";
-const faqList: FAQEntity[] = faqData;
+const faqList = ref<FAQEntity[]>(faqData);
+
 </script>
 
 <template>
@@ -53,8 +55,12 @@ const faqList: FAQEntity[] = faqData;
 }
 
 .faq-cards {
+    width: 100%;
+    max-width: 1060px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, 333px);
     gap: 30px;
 }
 </style>

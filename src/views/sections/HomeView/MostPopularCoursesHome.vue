@@ -56,7 +56,7 @@ const secondCardParagraphStyle = "max-width: 159px;";
     text-align: center;
     padding: 160px 0;
     gap: 96px;
-    width: 1050px;
+    max-width: 1050px;
 }
 
 .popular > div > div:nth-child(1) {
@@ -84,6 +84,16 @@ const secondCardParagraphStyle = "max-width: 159px;";
 
 .popular-cards > .course-card:nth-of-type(2) p {
     background-color: #8D5CF6;
+}
+
+@media (max-width: 1050px) {
+    .popular-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .popular-cards > .course-card:nth-of-type(1) {
+        margin: 0;
+    }
 }
 
 </style>
