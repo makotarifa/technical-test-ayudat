@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
-import { NButton, NIcon, NDropdown } from "naive-ui";
+import { NButton, NDropdown } from "naive-ui";
 import { onBeforeUnmount, onMounted, ref } from "vue";
 
 const isDropdownVisible = ref(false);
@@ -41,19 +41,19 @@ const handleMenuClick = (key) => {
 };
 
 const checkDropdownVisibility = () => {
-    const navController = document.querySelector('.nav-controller');
+    const navController = document.querySelector(".nav-controller");
     if (navController) {
         isDropdownVisible.value = navController.clientWidth < 768;
     }
 };
 
 onMounted(() => {
-    window.addEventListener('resize', checkDropdownVisibility);
+    window.addEventListener("resize", checkDropdownVisibility);
     checkDropdownVisibility();
 });
 
 onBeforeUnmount(() => {
-    window.removeEventListener('resize', checkDropdownVisibility);
+    window.removeEventListener("resize", checkDropdownVisibility);
 });
 
 </script>
@@ -122,6 +122,7 @@ nav {
     backdrop-filter: blur(10px);
     height: 91px;
     width: 100%;
+    padding: 0 2rem;
 }
 
 nav h3 {
@@ -167,7 +168,7 @@ nav h3 {
 }
 
 .nav-right a {
-    margin: 0rem 2rem;
+    margin: 0 2rem;
 }
 
 @media (max-width: 768px) {

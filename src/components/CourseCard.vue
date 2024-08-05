@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
-import StarRatingBar from "@/views/sections/HomeView/StarRatingBar.vue";
+import StarRatingBar from "@/components/StarRatingBar.vue";
 
 const props = defineProps<{
     avatar: string,

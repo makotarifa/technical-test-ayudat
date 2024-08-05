@@ -10,6 +10,7 @@ interface FAQEntity {
 
 const faqWidth = "333px";
 const faqHeight = "151px";
+
 const faqList = ref<FAQEntity[]>(faqData);
 
 </script>
