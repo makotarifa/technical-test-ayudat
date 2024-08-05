@@ -25,6 +25,7 @@ const cardWidth = "329px";
             <div class="cards-container">
                     <fmp-card
                         v-for="fmpc in fmpcList"
+                        :key="fmpc.title"
                         :title="fmpc.title"
                         :description="fmpc.description"
                         :image="fmpc.image"

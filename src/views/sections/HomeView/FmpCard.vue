@@ -11,7 +11,7 @@ const props = defineProps<{
 <template>
     <div class="fmp-card" :style="{ width: props.width }">
         <div class="img-controller">
-            <img :src="props.image" />
+            <img :src="props.image" alt="Course Image"/>
         </div>
         <hr class="line-separator" />
         <h5>{{props.title}}</h5>
