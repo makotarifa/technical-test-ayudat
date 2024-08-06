@@ -20,25 +20,25 @@ import { NButton } from "naive-ui";
             <div class="right-part">
                 <div class="relative-container">
                     <div class="img-controller girl">
-                        <img src="@/assets/images/girl.png">
+                        <img src="@/assets/images/girl.png" alt="Girl with books">
                     </div>
                     <div class="img-controller graph">
-                        <img src="@/assets/images/2019graph.png">
+                        <img src="@/assets/images/2019graph.png " alt="Graphics image">
                     </div>
                     <div class="img-controller global-stats">
-                        <img src="@/assets/images/global-stats.png">
+                        <img src="@/assets/images/global-stats.png" alt="Global Statistic Image">
                     </div>
                     <div class="img-controller stats-vector">
-                        <img src="@/assets/images/icons/stats-vector.svg">
+                        <img src="@/assets/images/icons/stats-vector.svg" alt="Stats Vector">
                     </div>
                     <div class="big">
-                        <div class="circle-figure" ></div>
+                        <div class="circle-figure"></div>
                     </div>
                     <div class="small">
-                        <div class="circle-figure" ></div>
+                        <div class="circle-figure"></div>
                     </div>
                     <div class="img-controller waves">
-                        <img src="@/assets/images/icons/waves.svg">
+                        <img src="@/assets/images/icons/waves.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -127,10 +127,10 @@ import { NButton } from "naive-ui";
 
 .main-content .graph {
     top: 13%;
-    left: 0%;
+    left: 0;
     max-height: 214px;
     max-width: 214px;
-    width: 40%;
+    width: 35%;
     height: auto;
 }
 
@@ -141,6 +141,8 @@ import { NButton } from "naive-ui";
     rotate: -60deg;
     top: 75%;
     left: 16%;
+    width: 10%;
+    max-width: 80px;
 }
 
 .main-content .circle-figure{
@@ -166,7 +168,7 @@ import { NButton } from "naive-ui";
     z-index: 1;
     top: 60%;
     left: 13%;
-    width: 5%;
+    width: 3%;
     aspect-ratio: 1/1;
     height: auto;
     max-width: 14px;
@@ -181,13 +183,12 @@ import { NButton } from "naive-ui";
     z-index: 1;
     top: 52%;
     right: 18%;
-    width: 30%;
-    height: 30%;
+    width: 15%;
     max-width: 100px;
     max-height: 90px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .main-content > div {
         flex-direction: column;
 
@@ -202,6 +203,7 @@ import { NButton } from "naive-ui";
 
 
 }
+
 
 @media (max-width: 700px) {
 
