@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { RouterLink } from "vue-router";
+import { RouterLink, useRouter } from "vue-router";
 import { NButton, NDropdown } from "naive-ui";
 import { onBeforeUnmount, onMounted, ref } from "vue";
 
+const router = useRouter();
 const isDropdownVisible = ref(false);
-
 const maxWidthForDropdown = 930;
 
 const menuOptions = [
@@ -43,7 +43,7 @@ const menuOptions = [
 const handleMenuClick = (key: any) => {
     const selectedOption = menuOptions.find(option => option.key === key);
     if (selectedOption) {
-        window.location.href = selectedOption.path;
+        router.push(selectedOption.path);
     }
 };
 
