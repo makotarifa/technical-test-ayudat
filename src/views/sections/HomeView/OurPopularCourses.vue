@@ -34,7 +34,7 @@ import { NButton } from "naive-ui";
                 <h2>Our Popular Courses</h2>
                 <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian
                     mechanics</p>
-                <n-button text  class="learn-more-btn" size="large" round icon-placement="right" ghost color="#8D5CF6">
+                <n-button text class="learn-more-btn" size="large" round icon-placement="right" ghost color="#8D5CF6">
                     <template #icon>
                         <div class="img-controller">
                             <img class="img" src="../../../assets/images/icons/small-arrow-right.svg">
@@ -51,7 +51,7 @@ import { NButton } from "naive-ui";
 .our-popular-courses {
     display: flex;
     justify-content: center;
-    padding: 160px 0;
+    padding: 0 2rem;
 }
 
 .our-popular-courses > div {
@@ -60,6 +60,7 @@ import { NButton } from "naive-ui";
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding: 160px 0;
 }
 
 .our-popular-courses h2 {
@@ -86,7 +87,8 @@ import { NButton } from "naive-ui";
 .our-popular-courses .circled {
     border-radius: 50%;
 }
-.our-popular-courses .left-part{
+
+.our-popular-courses .left-part {
     width: 100%;
 }
 
@@ -94,11 +96,12 @@ import { NButton } from "naive-ui";
     display: flex;
     align-items: center;
     position: relative;
-    width: 556px;
+    width: 100%;
+    max-width: 556px;
     height: 472px;
 }
 
-.our-popular-courses .relative-container .img-controller,.inverted-triangle {
+.our-popular-courses .relative-container .img-controller, .inverted-triangle {
     position: absolute;
 }
 
@@ -139,8 +142,11 @@ import { NButton } from "naive-ui";
 .our-popular-courses .inverted-triangle {
     top: 13%;
     left: 12.75%;
-    width: 423px;
-    height: 423px;
+    width: 80%;
+    height: auto;
+    max-width: 423px;
+    max-height: 423px;
+    aspect-ratio: 1/1;
     background-color: var(--figure-primary-color);
     clip-path: polygon(50% 90%, 10% 10%, 90% 10%);
 }
@@ -161,7 +167,6 @@ import { NButton } from "naive-ui";
 }
 
 
-
 @media (max-width: 870px) {
     .our-popular-courses > div {
         flex-direction: column;
@@ -179,7 +184,7 @@ import { NButton } from "naive-ui";
 
     .our-popular-courses .right-part p {
         text-align: center;
-        width: 450px;
+        max-width: 450px;
         padding: 1rem 0;
     }
 
@@ -187,7 +192,6 @@ import { NButton } from "naive-ui";
         display: flex;
         justify-content: center;
     }
-
 
 
 }

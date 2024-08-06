@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import FmpCard from "@/views/sections/HomeView/FmpCard.vue";
+import FmpCard from "@/components/FmpCard.vue";
 import fmpcData from "@/data/fmpcData.json";
 import { ref } from "vue";
 
@@ -64,6 +64,7 @@ const cardWidth = "329px";
 
 .first-most-popular .cards-container{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     align-items: center;

@@ -1,97 +1,101 @@
 <script setup lang="ts">
-import { NButton, NIcon } from "naive-ui";
 </script>
 <template>
     <footer>
         <div class="first-footer">
             <div class="first-footer-content">
-                <table>
-                    <tbody>
-                    <tr>
-                        <th>Company Info</th>
-                        <th>Legal</th>
-                        <th>Features</th>
-                        <th>Resources</th>
-                        <th>Get In Touch</th>
-                    </tr>
-                    <tr>
-                        <td><a href="#">About us</a></td>
-                        <td><a href="#">About us</a></td>
-                        <td><a href="#">Business Marking</a></td>
-                        <td><a href="#">IOS &amp; Android</a></td>
-                        <td>
+                <div class="footer-section">
+                    <h5>Company Info</h5>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Carrier</a></li>
+                        <li><a href="#">We are hiring</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Carrier</a></li>
+                        <li><a href="#">We are hiring</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Features</h5>
+                    <ul>
+                        <li><a href="#">Business Marking</a></li>
+                        <li><a href="#">User Analytic</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">Unlimited Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">IOS &amp; Android</a></li>
+                        <li><a href="#">Watch a Demo</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Get In Touch</h5>
+                    <ul>
+                        <li>
                             <div class="img-controller">
                                 <img src="@/assets/images/icons/phone.svg">
                             </div>
-                            <a href="#">(480) 555-0103</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">Carrier</a></td>
-                        <td><a href="#">Carrier</a></td>
-                        <td><a href="#">User Analytic</a></td>
-                        <td><a href="#">Watch a Demo</a></td>
-                        <td>
+                            <a href="#">(480) 555-0103</a>
+                        </li>
+                        <li>
                             <div class="img-controller">
                                 <img src="@/assets/images/icons/location.svg">
                             </div>
-                            <a href="#">4517 Washington Ave, Manchester, Kent</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">We are hiring</a></td>
-                        <td><a href="#">We are hiring</a></td>
-                        <td><a href="#">Live Chat</a></td>
-                        <td><a href="#">Customers</a></td>
-                        <td>
+                            <a href="#">4517 Washington Ave, Manchester, Kent</a>
+                        </li>
+                        <li>
                             <div class="img-controller">
                                 <img src="@/assets/images/icons/email.svg">
                             </div>
-                            <a href="">debra.holt@example.com</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">Blog</a></td>
-                        <td><a href="#">Blog</a></td>
-                        <td><a href="#">Unlimited Support</a></td>
-                        <td><a href="#">API</a></td>
-                        <td></td>
-                    </tr>
-                    </tbody>
-                </table>
+                            <a href="">debra.holt@example.com</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="second-footer">
             <div class="second-footer-content">
                 <p>AyudaT FrontEnd Technical Test by Ángel Jesús Morando Gallego</p>
-                <div>
-                    <n-button quaternary circle>
-                        <template #icon>
-                            <n-icon>
-                                <img src="@/assets/images/icons/facebook.svg">
-                            </n-icon>
-                        </template>
-                    </n-button>
-                    <n-button quaternary circle>
-                        <template #icon>
-                            <n-icon>
-                                <img src="@/assets/images/icons/instagram-outlined.svg">
-                            </n-icon>
-                        </template>
-                    </n-button>
-                    <n-button quaternary circle>
-                        <template #icon>
-                            <n-icon>
-                                <img src="@/assets/images/icons/twitter-outlined.svg">
-                            </n-icon>
-                        </template>
-                    </n-button>
+                <div class="social-media-buttons">
+                    <a>
+                        <div class="img-controller">
+                            <img src="@/assets/images/icons/facebook.svg">
+                        </div>
+                    </a>
+                    <a>
+                        <div class="img-controller">
+                            <img src="@/assets/images/icons/instagram-outlined.svg">
+                        </div>
+                    </a>
+                    <a>
+                        <div class="img-controller">
+                            <img src="@/assets/images/icons/twitter-outlined.svg">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
 </template>
 <style scoped>
+
 .first-footer, .second-footer {
+    padding: 0 1rem;
     display: flex;
     justify-content: center;
+
 }
 
 .first-footer {
@@ -108,35 +112,44 @@ import { NButton, NIcon } from "naive-ui";
 }
 
 
-.first-footer-content table {
+.first-footer-content {
+    display: flex;
+    justify-content: space-between;
     padding: 3rem 0;
+    gap: 20px;
     width: 100%;
 }
 
-.first-footer-content table th {
+.first-footer-content h5 {
     text-align: start;
     font-weight: bold;
     color: var(--dark-primary-text-color);
     padding-bottom: 1rem;
 }
 
-.first-footer-content table td {
-    padding: 0.2rem 0;
+.first-footer-content .img-controller {
+    width: 24px;
 }
+
 
 .first-footer-content a {
     color: var(--dark-secondary-text-color);
     text-decoration: none;
-
 }
 
-.first-footer-content tr td:nth-child(5) {
+.first-footer-content .footer-section ul{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
 }
 
+.first-footer-content .footer-section:last-of-type li{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 
 .second-footer-content {
     display: flex;
@@ -153,11 +166,37 @@ td .img-controller {
     margin: 0 0.8rem;
 }
 
-@media (max-width: 768px){
+.second-footer-content .social-media-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.second-footer-content .social-media-buttons .img-controller {
+    width: 24px;
+}
+
+@media (max-width: 768px) {
+    .first-footer-content {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .first-footer-content
+
+    .second-footer-content {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .second-footer-content p {
         width: 100%;
         text-align: center;
         color: var(--dark-secondary-text-color);
+    }
+
+    .second-footer-content .social-media-buttons {
+        padding: 1rem 0;
     }
 
     .second-footer-content > div {
