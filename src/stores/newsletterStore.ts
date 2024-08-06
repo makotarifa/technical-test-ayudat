@@ -20,6 +20,10 @@ export const useNewsletterStore = defineStore("newsletter", {
         setIsFailed(status: boolean) {
             this.isFailed = status;
         },
+        resetStore() {
+            this.isFailed = false;
+            this.isSubscribed = false;
+        },
         async handleSubmit() {
             const request: EmailRequest = { email: this.email };
             try {

@@ -13,6 +13,7 @@ watch(() => newsletterStore.isFailed, (newVal) => {
             content: "There was an error subscribing to the newsletter."
         });
     }
+    newsletterStore.resetStore();
 });
 
 watch(() => newsletterStore.isSubscribed, (newVal) => {
@@ -22,8 +23,6 @@ watch(() => newsletterStore.isSubscribed, (newVal) => {
             content: "Thank you for subscribing to the newsletter."
         });
     }
+    newsletterStore.resetStore();
 });
 </script>
-<template>
-
-</template>

@@ -16,7 +16,7 @@ const newsletterStore = useNewsletterStore();
 
         <form class="email-form" @submit.prevent="newsletterStore.handleSubmit">
             <div>
-                <input type="email" v-model="newsletterStore.email" placeholder="Your Email" required />
+                <input v-model="newsletterStore.email" type="email" placeholder="Your Email" required />
                 <button type="submit">Subscribe</button>
             </div>
         </form>
