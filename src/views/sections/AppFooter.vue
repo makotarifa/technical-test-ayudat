@@ -45,19 +45,19 @@
                     <ul>
                         <li>
                             <div class="img-controller">
-                                <img src="@/assets/images/icons/phone.svg">
+                                <img src="@/assets/images/icons/phone.svg" alt="Phone">
                             </div>
                             <a href="#">(480) 555-0103</a>
                         </li>
                         <li>
                             <div class="img-controller">
-                                <img src="@/assets/images/icons/location.svg">
+                                <img src="@/assets/images/icons/location.svg" alt="Location">
                             </div>
                             <a href="#">4517 Washington Ave, Manchester, Kent</a>
                         </li>
                         <li>
                             <div class="img-controller">
-                                <img src="@/assets/images/icons/email.svg">
+                                <img src="@/assets/images/icons/email.svg" alt="Email">
                             </div>
                             <a href="">debra.holt@example.com</a>
                         </li>
@@ -71,17 +71,17 @@
                 <div class="social-media-buttons">
                     <a>
                         <div class="img-controller">
-                            <img src="@/assets/images/icons/facebook.svg">
+                            <img src="@/assets/images/icons/facebook.svg" alt="Facebook">
                         </div>
                     </a>
                     <a>
                         <div class="img-controller">
-                            <img src="@/assets/images/icons/instagram-outlined.svg">
+                            <img src="@/assets/images/icons/instagram-outlined.svg" alt="Instagram">
                         </div>
                     </a>
                     <a>
                         <div class="img-controller">
-                            <img src="@/assets/images/icons/twitter-outlined.svg">
+                            <img src="@/assets/images/icons/twitter-outlined.svg" alt="Twitter">
                         </div>
                     </a>
                 </div>
@@ -180,8 +180,6 @@ td .img-controller {
         flex-wrap: wrap;
         gap: 20px;
     }
-
-    .first-footer-content
 
     .second-footer-content {
         padding: 1rem;

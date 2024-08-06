@@ -88,7 +88,7 @@ onBeforeUnmount(() => {
                     <n-button style="padding: 15px 25px; min-height: 52px" size="large" icon-placement="right" color="#8D5CF6">
                         <template #icon>
                             <div class="img-controller">
-                                <img src="@/assets/images/icons/arrow-right.svg" alt="Right Arrow Icon" />
+                                <img src="../../assets/images/icons/arrow-right.svg" alt="Right Arrow Icon" />
                             </div>
                         </template>
                         JOIN US
@@ -99,7 +99,7 @@ onBeforeUnmount(() => {
                         <n-button size="large" icon-placement="right" color="#8D5CF6">
                             <template #icon>
                                 <div class="img-controller menu-icon">
-                                    <img src="@/assets/images/icons/menu-icon.svg" alt="Menu Icon" />
+                                    <img src="../../assets/images/icons/menu-icon.svg" alt="Menu Icon" />
                                 </div>
                             </template>
                             Menu
