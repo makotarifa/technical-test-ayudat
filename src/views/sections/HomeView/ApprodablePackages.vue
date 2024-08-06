@@ -37,6 +37,7 @@ const packagesList = ref<PackageEntity[]>(packagesData);
 .approdable-packages {
     display: flex;
     justify-content: center;
+    padding: 0 1rem;
 }
 
 .approdable-packages > div {
@@ -66,4 +67,5 @@ const packagesList = ref<PackageEntity[]>(packagesData);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
+
 </style>

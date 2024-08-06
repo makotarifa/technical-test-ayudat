@@ -59,7 +59,6 @@ const props = defineProps<{
     line-height: 20px;
     letter-spacing: 0.2px;
     text-align: center;
-
 }
 
 .course-card p:first-line {

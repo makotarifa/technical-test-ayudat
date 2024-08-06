@@ -9,13 +9,14 @@ import MainContent from "@/views/sections/HomeView/MainContent.vue";
 </script>
 
 <template>
-        <main>
-            <main-content/>
-            <first-most-popular-courses/>
-            <our-popular-courses/>
-            <approdable-packages/>
-            <most-popular-courses/>
-            <f-a-q/>
-            <newsletter/>
-        </main>
+    <main>
+        <main-content />
+        <first-most-popular-courses />
+        <our-popular-courses />
+        <approdable-packages />
+        <most-popular-courses />
+        <f-a-q />
+        <newsletter />
+    </main>
 </template>
+

@@ -82,5 +82,21 @@ const newsletterStore = useNewsletterStore();
     background-color: var(--button-active-primary-color);
 }
 
+@media (max-width: 870px) {
+    .newsletter  {
+        color: var(--light-primary-text-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 160px 1rem;
+        gap: 80px;
+    }
+
+}
+
+
+
 
 </style>

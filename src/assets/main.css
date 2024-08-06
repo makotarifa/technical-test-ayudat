@@ -19,7 +19,7 @@
     --button-active-primary-color: var(--primary-color-active);
     --link-primary-color: var(--primary-color);
     --icon-primary-color: var(--primary-color);
-    --background-shape-primary-color: var(--secondary-color);
+    --background-shape-primary-color: var(--secondary-color-2);
     --background-shape-second-color: var(--elipse-color);
     --row-separator-primary-color: var(--danger-color);
     --footer-primary-color: var(--pure-white-color);

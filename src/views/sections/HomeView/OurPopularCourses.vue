@@ -30,18 +30,20 @@ import { NButton } from "naive-ui";
                 </div>
             </div>
             <div class="right-part">
-                <hr class="line-separator" />
-                <h2>Our Popular Courses</h2>
-                <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian
-                    mechanics</p>
-                <n-button text class="learn-more-btn" size="large" round icon-placement="right" ghost color="#8D5CF6">
-                    <template #icon>
-                        <div class="img-controller">
-                            <img class="img" src="../../../assets/images/icons/small-arrow-right.svg">
-                        </div>
-                    </template>
-                    <h6>Learn More</h6>
-                </n-button>
+                <div>
+                    <hr class="line-separator" />
+                    <h2>Our Popular Courses</h2>
+                    <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian
+                        mechanics</p>
+                    <n-button text class="learn-more-btn" size="large" round icon-placement="right" ghost color="#8D5CF6">
+                        <template #icon>
+                            <div class="img-controller">
+                                <img class="img" src="../../../assets/images/icons/small-arrow-right.svg">
+                            </div>
+                        </template>
+                        <h6>Learn More</h6>
+                    </n-button>
+                </div>
             </div>
         </div>
     </section>
@@ -151,11 +153,20 @@ import { NButton } from "naive-ui";
     clip-path: polygon(50% 90%, 10% 10%, 90% 10%);
 }
 
-.right-part {
+.right-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+.right-part > div{
     display: flex;
     gap: 35px;
     flex-direction: column;
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     align-items: start;
 }
 

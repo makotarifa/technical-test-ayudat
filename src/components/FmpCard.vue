@@ -41,10 +41,11 @@ const props = defineProps<{
 }
 
 .fmp-card p {
-    font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
     color: var(--dark-secondary-text-color);
+    width: 100%;
+    max-width: 136px;
 }
 
 .fmp-card .line-separator {
