@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import courseData from "@/data/coursesData.json";
 import CourseCard from "@/components/CourseCard.vue";
+import { ref } from "vue";
 
 interface CourseEntity {
     avatar: string;
@@ -10,8 +11,8 @@ interface CourseEntity {
     rate: number;
 }
 
-const popularList: CourseEntity[] = courseData;
-//TODO: Modify the style of after first line of the paragraph on the first card
+const popularList = ref<CourseEntity[]>(courseData);
+
 const firstCardParagraphStyle = "max-width: 307px;";
 const secondCardParagraphStyle = "max-width: 159px;";
 </script>

@@ -5,6 +5,8 @@ import { onBeforeUnmount, onMounted, ref } from "vue";
 
 const isDropdownVisible = ref(false);
 
+const maxWidthForDropdown = 930;
+
 const menuOptions = [
     {
         label: "Home",
@@ -14,26 +16,31 @@ const menuOptions = [
     {
         label: "Product",
         key: "product",
-        path: "/Product"
+        path: "/"
     },
     {
         label: "Pricing",
         key: "pricing",
-        path: "/Pricing"
+        path: "/"
     },
     {
         label: "Contact",
         key: "contact",
-        path: "/Contact"
+        path: "/"
     },
     {
         label: "Login",
         key: "login",
-        path: "/login"
+        path: "/"
+    },
+    {
+        label: "Join Us",
+        key: "join-us",
+        path: "/"
     }
 ];
 
-const handleMenuClick = (key) => {
+const handleMenuClick = (key: any) => {
     const selectedOption = menuOptions.find(option => option.key === key);
     if (selectedOption) {
         window.location.href = selectedOption.path;
@@ -41,10 +48,7 @@ const handleMenuClick = (key) => {
 };
 
 const checkDropdownVisibility = () => {
-    const navController = document.querySelector(".nav-controller");
-    if (navController) {
-        isDropdownVisible.value = navController.clientWidth < 768;
-    }
+    isDropdownVisible.value = window.innerWidth <= maxWidthForDropdown;
 };
 
 onMounted(() => {
@@ -59,29 +63,29 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <nav>
+    <nav class="nav-bar">
         <div class="nav-controller">
             <h3>BrandName</h3>
             <div>
                 <div v-if="!isDropdownVisible" class="nav-left">
                     <ul>
                         <li>
-                            <RouterLink to="/Home">Home</RouterLink>
+                            <RouterLink to="/">Home</RouterLink>
                         </li>
                         <li>
-                            <RouterLink to="/Product">Product</RouterLink>
+                            <RouterLink to="/">Product</RouterLink>
                         </li>
                         <li>
-                            <RouterLink to="/Pricing">Pricing</RouterLink>
+                            <RouterLink to="/">Pricing</RouterLink>
                         </li>
                         <li>
-                            <RouterLink to="/Contact">Contact</RouterLink>
+                            <RouterLink to="/">Contact</RouterLink>
                         </li>
                     </ul>
                 </div>
                 <div v-if="!isDropdownVisible" class="nav-right">
-                    <RouterLink to="/login">Login</RouterLink>
-                    <n-button size="large" icon-placement="right" color="#8D5CF6">
+                    <RouterLink to="/">Login</RouterLink>
+                    <n-button style="padding: 15px 25px; min-height: 52px" size="large" icon-placement="right" color="#8D5CF6">
                         <template #icon>
                             <div class="img-controller">
                                 <img src="@/assets/images/icons/arrow-right.svg" alt="Right Arrow Icon" />
@@ -94,8 +98,8 @@ onBeforeUnmount(() => {
                     <n-dropdown :options="menuOptions" @select="handleMenuClick">
                         <n-button size="large" icon-placement="right" color="#8D5CF6">
                             <template #icon>
-                                <div class="img-controller">
-                                    <img src="@/assets/images/icons/star.svg" alt="Menu Icon" />
+                                <div class="img-controller menu-icon">
+                                    <img src="@/assets/images/icons/menu-icon.svg" alt="Menu Icon" />
                                 </div>
                             </template>
                             Menu
@@ -108,18 +112,10 @@ onBeforeUnmount(() => {
 </template>
 
 <style scoped>
-header {
-
-}
-
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
-    position: sticky;
-    top: 0;
-    backdrop-filter: blur(10px);
     height: 91px;
     width: 100%;
     padding: 0 2rem;
@@ -131,6 +127,7 @@ nav h3 {
     letter-spacing: 0.1px;
     line-height: 32px;
     text-align: start;
+    padding-right: 4rem;
 }
 
 .nav-controller {
@@ -149,10 +146,17 @@ nav h3 {
 }
 
 .nav-left > ul, .nav-right {
+    padding: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     list-style: none;
+    gap: 21px;
+}
+
+.nav-right{
+    gap: 45px;
+    padding-right: 5rem;
 }
 
 .nav-left li {
@@ -163,15 +167,10 @@ nav h3 {
     color: #fff;
     text-decoration: none;
     transition: 0.4s;
-    padding: 0.4rem 0.8rem;
     border-radius: 0.25rem;
 }
 
-.nav-right a {
-    margin: 0 2rem;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 930px) {
     .nav-left, .nav-right {
         display: none;
     }

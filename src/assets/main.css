@@ -36,6 +36,7 @@
     --card-tag-secondary-color: var(--dark-background-color);
     --line-separator-primary-color: var(--danger-color);
     --figure-primary-color: var(--cream-white-color);
+    --light-button-primary-color: var(--pure-white-color);
 }
 
 .img-controller img, .img-controller-inverse img, .n-button img {

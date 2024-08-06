@@ -21,21 +21,21 @@ const props = defineProps({
                 </n-tag>
             </div>
             <div class="top-part-buttons">
-                <n-button tertiary circle>
+                <n-button color="#FFF" circle>
                     <template #icon>
                         <div class="img-controller">
                             <img src="@/assets/images/icons/heart.svg">
                         </div>
                     </template>
                 </n-button>
-                <n-button tertiary circle>
+                <n-button color="#FFF" circle>
                     <template #icon>
                         <div class="img-controller">
                             <img src="@/assets/images/icons/shop-cart.svg">
                         </div>
                     </template>
                 </n-button>
-                <n-button tertiary circle>
+                <n-button color="#FFF" circle>
                     <template #icon>
                         <div class="img-controller">
                             <img src="@/assets/images/icons/eye.svg">
@@ -161,6 +161,13 @@ const props = defineProps({
 .package-card .learn-more-btn .img-controller {
     width: 9px;
 }
+
+.package-card .top-part-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 .package-card .top-part-buttons .img-controller {
     width: 20px;
 }
