@@ -2,16 +2,7 @@
 import { ref, onMounted } from "vue";
 import PackageCard from "@/components/PackageCard.vue";
 import packagesData from "@/data/packagesData.json";
-
-interface PackageEntity {
-    title: string;
-    rate: number;
-    sales: number;
-    oldPrice: number;
-    newPrice: number;
-    image: string;
-    description: string;
-}
+import type { PackageEntity } from "@/models/PackageEntity";
 
 const packagesList = ref<PackageEntity[]>(packagesData);
 </script>

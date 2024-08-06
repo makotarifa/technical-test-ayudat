@@ -2,17 +2,9 @@
 import courseData from "@/data/coursesData.json";
 import CourseCard from "@/components/CourseCard.vue";
 import { ref } from "vue";
-
-interface CourseEntity {
-    avatar: string;
-    name: string;
-    role: string;
-    description: string;
-    rate: number;
-}
+import type { CourseEntity } from "@/models/CourseEntity";
 
 const popularList = ref<CourseEntity[]>(courseData);
-
 const firstCardParagraphStyle = "max-width: 307px;";
 const secondCardParagraphStyle = "max-width: 159px;";
 </script>

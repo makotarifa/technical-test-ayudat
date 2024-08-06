@@ -2,12 +2,7 @@
 import FmpCard from "@/components/FmpCard.vue";
 import fmpcData from "@/data/fmpcData.json";
 import { ref } from "vue";
-
-interface FMPCardEntity {
-    title: string;
-    description: string;
-    image: string;
-}
+import type { FMPCardEntity } from "@/models/FMPCardEntity";
 
 const fmpcList = ref<FMPCardEntity[]>(fmpcData);
 const cardWidth = "329px";

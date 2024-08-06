@@ -2,16 +2,12 @@
 import FAQCard from "@/components/FAQCard.vue";
 import faqData from "@/data/faqData.json";
 import { ref } from "vue";
-
-interface FAQEntity {
-    title: string;
-    description: string;
-}
+import type { FAQCardEntity } from "@/models/FAQCardEntity";
 
 const faqWidth = "333px";
 const faqHeight = "151px";
 
-const faqList = ref<FAQEntity[]>(faqData);
+const faqList = ref<FAQCardEntity[]>(faqData);
 
 </script>
 
